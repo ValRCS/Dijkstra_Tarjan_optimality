@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibonacci Heap Visualizer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Fibonacci Heap Priority Queue</h1>
+      <p>Interactive visualization of insert, findMin, extractMin, decreaseKey, and delete.</p>
+    </header>
+
+    <main class="layout">
+      <section class="controls" aria-label="Heap controls">
+        <h2>Controls</h2>
+
+        <form id="insert-form" class="control-row">
+          <label for="insert-key">Insert key</label>
+          <input id="insert-key" type="number" value="10" required />
+          <button type="submit">Insert</button>
+        </form>
+
+        <div class="control-row">
+          <button id="find-min">Find min</button>
+          <button id="extract-min">Extract min</button>
+        </div>
+
+        <form id="decrease-form" class="control-row">
+          <label for="decrease-key">Decrease selected node to</label>
+          <input id="decrease-key" type="number" required />
+          <button type="submit">Decrease key</button>
+        </form>
+
+        <div class="control-row">
+          <button id="delete-selected">Delete selected</button>
+          <button id="reset-heap">Reset</button>
+          <button id="load-sample">Load sample</button>
+        </div>
+
+        <div class="control-row">
+          <label for="node-picker">Select node id</label>
+          <select id="node-picker"></select>
+        </div>
+
+        <div class="control-row">
+          <label for="speed">Animation speed</label>
+          <input id="speed" type="range" min="0.25" max="2" step="0.25" value="1" />
+          <span id="speed-value">1x</span>
+        </div>
+
+        <div class="control-row">
+          <button id="play-log">Play</button>
+          <button id="pause-log">Pause</button>
+        </div>
+
+        <p id="status" aria-live="polite"></p>
+      </section>
+
+      <section class="viz" aria-label="Heap visualization">
+        <h2>Heap</h2>
+        <svg id="heap-svg" viewBox="0 0 1200 700" role="img" aria-label="Fibonacci heap graph"></svg>
+      </section>
+
+      <section class="log" aria-label="Operation log">
+        <h2>Operation Log</h2>
+        <ol id="operation-log"></ol>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
