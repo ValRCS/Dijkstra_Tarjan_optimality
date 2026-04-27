@@ -12,3 +12,8 @@ Notes on Robert Tarjan's lecture on Dijkstra optimality at Latvian University 27
 ## Sparse Graph Definition
 
 
+## Actual 
+
+* Minimum Spanning Tree
+* Splay Tree optimality
+
