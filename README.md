@@ -1,5 +1,9 @@
 # Dijkstra_Tarjan_optimality
 Notes on Robert Tarjan's lecture on Dijkstra optimality at Latvian University 27.04.2026
+## Public page
+
+* GitHub Pages: https://<your-github-username>.github.io/Dijkstra_Tarjan_optimality/
+
 
 ## Dijkstra pronouncination (sic ) :)
 
